@@ -1,0 +1,33 @@
+.Menu {
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	width: 40px;
+
+	span {
+		display: block;
+		margin-bottom: 6px;
+		border-radius: 5px;
+		height: 4px;
+		background-color: #FFFFFF;
+	}
+
+	&.active {
+		top: 60px;
+
+		span:first-child {
+			transform: rotate(45deg);
+			margin-bottom: -4px;
+		}
+
+		span:nth-child(2) {
+			display: none;
+			margin: 0;
+		}
+
+		span:last-child {
+			transform: rotate(-45deg);
+			margin-bottom: -4px;
+		}
+	}
+}

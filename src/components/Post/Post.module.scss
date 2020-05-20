@@ -1,0 +1,45 @@
+.Post {
+	padding-top: 50px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-grow: 1;
+	background: linear-gradient(360deg, rgba(112, 15, 52, 0.876676) 0.01%, rgba(36, 11, 54, 0.91) 0.13%, rgba(195, 20, 50, 0.84) 101.42%);
+	//background: #c31432;  /* fallback for old browsers */
+	//background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+	//background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width: 100%;
+
+	.add_btn {
+		display: block;
+		font-size: 20px;
+		background: none;
+		color: rgba(255, 255, 255, 0.8);
+		border: none;
+		margin: 0 0 6px auto;
+	}
+
+	h1 {
+		font-size: 36px;
+		margin-bottom: 80px;
+	}
+
+	ul {
+		box-sizing: border-box;
+		list-style: none;
+		border: 2px solid white;
+		margin: 12px 0 0;
+		padding: 25px 20px 10px;
+		border-radius: 5px;
+		width: 600px;
+
+		li {
+			border: 2px solid white;
+			padding: 13px 20px;
+			margin-bottom: 15px;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+
+	}
+}
