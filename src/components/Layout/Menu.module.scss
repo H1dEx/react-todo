@@ -3,8 +3,11 @@
 	top: 50px;
 	left: 50px;
 	width: 40px;
+	cursor: pointer;
+	z-index: 2;
 
 	span {
+		transition: 0.4s all;
 		display: block;
 		margin-bottom: 6px;
 		border-radius: 5px;
@@ -14,6 +17,8 @@
 
 	&.active {
 		top: 60px;
+		left: 330px;
+
 
 		span:first-child {
 			transform: rotate(45deg);

@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Menu.module.scss'
 const Menu = props => {
+    const clazz = (props.opened)? `${styles.Menu} ${styles.active}` : `${styles.Menu}`
     return (
-        <div className={`${styles.Menu} ${styles.active}`}>
+        <div className={clazz} onClick={props.onToggleMenu}>
             <span/>
             <span/>
             <span/>

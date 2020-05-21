@@ -2,10 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.jsx';
-
-const item = (<React.StrictMode>
+import {Provider} from 'react-redux';
+import store from './redux/store';
+const item = (
+    <Provider store={store}>
         <App/>
-    </React.StrictMode>);
+    </Provider>
+);
 
 ReactDOM.render(
     item,
